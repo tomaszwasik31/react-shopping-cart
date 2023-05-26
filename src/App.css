@@ -26,23 +26,20 @@ body {
   max-width: 140rem;
 }
 
-.active {
-  color: var(--accent);
-}
-
-a:active {
-  color: var(--accent);
-}
-
-a:not(:visited) {
+/* a:not(:visited) {
   color: var(--light);
 }
 a:visited {
   color: var(--light);
-}
+} */
 
 a {
   text-decoration: none;
+  color: var(--light);
+}
+
+.active {
+  color: var(--accent);
 }
 
 ul {
