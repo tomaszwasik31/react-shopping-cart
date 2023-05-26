@@ -1,0 +1,77 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #070707;
+  --light: #e4e4e4;
+  --accent: #b6c6ff;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.app-wrapper {
+  padding: 2rem;
+}
+
+/* global-classes */
+.container-max {
+  max-width: 140rem;
+}
+
+.active {
+  color: var(--accent);
+}
+
+a:active {
+  color: var(--accent);
+}
+
+a:not(:visited) {
+  color: var(--light);
+}
+a:visited {
+  color: var(--light);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.logo {
+  width: 3rem;
+  justify-self: start;
+}
+
+.nav-links-container {
+  justify-self: center;
+  /* center links to logo size */
+  margin-left: -3rem;
+}
+
+.nav-links-wrapper {
+  display: flex;
+  gap: 5rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: 300;
+}

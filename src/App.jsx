@@ -1,20 +1,22 @@
 import React from "react";
 import "./App.css";
-import { Route, Routes, Link } from "react-router-dom"
+import { Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Nav from "./components/Nav";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <>
-      <Nav/>
-
+    <div className="app-wrapper">
+      <Nav />
+      <nav></nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

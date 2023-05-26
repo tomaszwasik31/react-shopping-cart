@@ -1,12 +1,30 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom";
+import logo from "../img/logo.svg";
 
 export default function Nav() {
   return (
-    <nav>
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/shop">Shop</Link></li>
-    </ul>
-  </nav>
-  )
+    <nav className="nav container-max">
+      <div className="logo-container ">
+        <img className="logo" src={logo} alt="logo" />
+      </div>
+      <div className="nav-links-container">
+        <div>
+          <ul className="nav-links-wrapper">
+            <li className="nav-link">
+              <NavLink exact to="/">
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-link">
+              <NavLink to="/shop">Shop</NavLink>
+            </li>
+
+            <li className="nav-link">
+              <NavLink to="/contact">Contact Us</NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 }
