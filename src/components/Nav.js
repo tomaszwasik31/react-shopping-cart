@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../img/logo.svg";
+import cart from "../img/cart.svg";
 
 export default function Nav() {
   return (
@@ -24,6 +25,9 @@ export default function Nav() {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="cart-container">
+        <img className="cart" src={cart} alt="cart" />
       </div>
     </nav>
   );

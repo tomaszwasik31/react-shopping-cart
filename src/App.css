@@ -36,8 +36,11 @@ a:visited {
 a {
   text-decoration: none;
   color: var(--light);
+  transition: all 0.3s;
 }
-
+a:hover {
+  color: var(--accent);
+}
 .active {
   color: var(--accent);
 }
@@ -47,20 +50,26 @@ ul {
 }
 
 .nav {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
   width: 3rem;
-  justify-self: start;
 }
 
-.nav-links-container {
-  justify-self: center;
-  /* center links to logo size */
-  margin-left: -3rem;
+.cart {
+  background-color: var(--accent);
+  width: 4rem;
+  border-radius: 100%;
+  padding: 0.5rem;
+  transition: all 0.5s;
+}
+
+.cart:hover {
+  cursor: pointer;
+  background-color: var(--dark);
 }
 
 .nav-links-wrapper {
