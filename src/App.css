@@ -26,12 +26,14 @@ body {
   max-width: 140rem;
 }
 
-/* a:not(:visited) {
-  color: var(--light);
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
-a:visited {
-  color: var(--light);
-} */
 
 a {
   text-decoration: none;
@@ -49,6 +51,7 @@ ul {
   list-style: none;
 }
 
+/* navbar */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -81,3 +84,26 @@ ul {
   font-size: 1.5rem;
   font-weight: 300;
 }
+
+/* home page */
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.accent{
+  color: var(--accent);
+}
+
+.h1-container{
+  display: flex;
+gap: .5rem;
+  align-items: center;
+
+}
+
+.h1-star{
+  height: 3.5rem;
+}
+
