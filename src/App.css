@@ -92,28 +92,50 @@ h1 {
   font-weight: 400;
 }
 
-.accent{
+.accent {
   color: var(--accent);
 }
 
-.h1-container{
+.h1-container {
   display: flex;
-gap: .5rem;
+  gap: 0.5rem;
   align-items: center;
-
 }
 
-.h1-star{
+.h1-star {
   height: 3.5rem;
 }
 
-.tagline{
+.tagline {
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-.small-txt{
+.small-txt {
   font-weight: 300;
   opacity: 50%;
 }
 
+/* .h1-container {
+  position: relative;
+  z-index: 2;
+}
+.circleLottie {
+  position: absolute;
+  left: calc(100% - 120px);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+} */
+
+.circleLottie {
+  position: absolute;
+
+  left: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.h1-container {
+  position: relative;
+  z-index: 2;
+}
