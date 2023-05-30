@@ -107,3 +107,13 @@ gap: .5rem;
   height: 3.5rem;
 }
 
+.tagline{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.small-txt{
+  font-weight: 300;
+  opacity: 50%;
+}
+

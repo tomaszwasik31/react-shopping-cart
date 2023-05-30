@@ -12,8 +12,8 @@ export default function Home() {
       </div>
 
       <p className="tagline">Unleash Your Coffee Passion with BrewHive</p>
-      <p>Today I am looking for</p>
-      
+      <p className="small-txt" >Today I am looking for</p>
     </div>
   );
 }
+
