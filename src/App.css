@@ -5,6 +5,37 @@
   box-sizing: border-box;
 }
 
+button {
+  /* Resetting margin and padding */
+  margin: 0;
+  padding: 0;
+
+  /* Resetting border */
+  border: none;
+  border-radius: 0;
+
+  /* Resetting background and text styles */
+  background-color: transparent;
+  color: inherit;
+
+  /* Resetting font styles */
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+
+  /* Resetting cursor */
+  cursor: pointer;
+
+  /* Resetting outline on focus */
+  outline: none;
+
+  /* Resetting text decoration */
+  text-decoration: none;
+
+  /* Resetting box-sizing */
+  box-sizing: border-box;
+}
+/* my css */
 :root {
   --dark: #070707;
   --light: #e4e4e4;
@@ -24,15 +55,6 @@ body {
 /* global-classes */
 .container-max {
   max-width: 140rem;
-}
-
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 4rem 0rem;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
 }
 
 a {
@@ -87,6 +109,15 @@ ul {
 
 /* home page */
 
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   font-size: 3.5rem;
   font-weight: 400;
@@ -138,4 +169,62 @@ h1 {
 .h1-container {
   position: relative;
   z-index: 2;
+}
+
+.big_category-container {
+  display: flex;
+  gap: 3rem;
+  height: 27rem;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.img-category-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: solid 1px white;
+  padding: 2rem 3rem;
+  border-radius: 10rem;
+  transition: all ease 0.4s;
+}
+
+.img-category-container:hover {
+  background-color: var(--accent);
+
+  cursor: pointer;
+}
+.img-category {
+  width: 8rem;
+}
+
+.txt-category {
+  font-weight: 300;
+}
+
+.small-category-container {
+  padding-top: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+  color: var(--light);
+  border: solid 1px var(--light);
+  border-radius: 2rem;
+  transition: all ease 0.4s;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+  color: var(--dark);
 }
