@@ -46,15 +46,19 @@ body {
   font-family: "Ubuntu", sans-serif;
   background-color: var(--dark);
   color: var(--light);
-}
-
-.app-wrapper {
-  padding: 2rem;
+  width: 100vw;
+  overflow-x: hidden;
+  
 }
 
 /* global-classes */
 .container-max {
   max-width: 140rem;
+}
+
+.app-wrapper {
+  padding: 2rem;
+  
 }
 
 a {
@@ -71,6 +75,26 @@ a:hover {
 
 ul {
   list-style: none;
+}
+
+/* stars */
+.star-bg {
+  width: 10rem;
+  position: absolute;
+}
+.star-bg-1 {
+  top: 20%;
+  left: 2%;
+}
+
+.star-bg-2 {
+  top: 15%;
+  right: calc(0% - 5rem);
+}
+
+.star-bg-3 {
+  top: 70%;
+  left: calc(0% - 4rem);
 }
 
 /* navbar */
@@ -146,17 +170,6 @@ h1 {
   font-weight: 300;
   opacity: 50%;
 }
-
-/* .h1-container {
-  position: relative;
-  z-index: 2;
-}
-.circleLottie {
-  position: absolute;
-  left: calc(100% - 120px);
-  transform: translate(-50%, -50%);
-  z-index: 1;
-} */
 
 .circleLottie {
   position: absolute;
