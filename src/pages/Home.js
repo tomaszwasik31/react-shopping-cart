@@ -1,6 +1,6 @@
 import React from "react";
 import star from "../img/icons/star.svg";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import { Player } from "@lottiefiles/react-lottie-player";
 import circleLottie from "../img/lottie/circle-lottie.json";
 import coffeeMachine from "../img/coffee-machine.webp";
 import coffeeBag from "../img/coffee-bag.webp";

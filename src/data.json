@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "name": "Coffee Machine",
+      "items": [
+        { "name": "BrewMaster 2000", "price": 249.99 },
+        { "name": "BeanToCup Pro", "price": 399.99 },
+        { "name": "Espresso Elite", "price": 179.99 }
+      ]
+    },
+    {
+      "name": "Coffee",
+      "items": [
+        { "name": "Morning Blend", "price": 12.99 },
+        { "name": "Dark Roast Delight", "price": 14.99 },
+        { "name": "Colombian Supreme", "price": 15.99 }
+      ]
+    },
+    {
+      "name": "Coffee Accessories",
+      "items": [
+        { "name": "Barista Essentials Kit", "price": 49.99 },
+        { "name": "Stainless Steel Milk Frother", "price": 19.99 },
+        { "name": "Ceramic Coffee Dripper", "price": 12.99 }
+      ]
+    },
+    {
+      "name": "Tea Selection",
+      "items": [
+        { "name": "English Breakfast", "price": 9.99 },
+        { "name": "Green Jasmine Tea", "price": 11.99 },
+        { "name": "Earl Grey Classic", "price": 10.99 }
+      ]
+    },
+    {
+      "name": "Coffee Merchandise",
+      "items": [
+        { "name": "Logo Mug", "price": 14.99 },
+        { "name": "T-shirt 'Coffee Lover'", "price": 19.99 },
+        { "name": "Enamel Pin Set", "price": 9.99 }
+      ]
+    },
+    {
+      "name": "Gift Sets",
+      "items": [
+        { "name": "Deluxe Coffee Sampler", "price": 29.99 },
+        { "name": "Coffee and Mug Combo", "price": 24.99 },
+        { "name": "Specialty Tea Gift Box", "price": 27.99 }
+      ]
+    },
+    {
+      "name": "Coffee Subscriptions",
+      "items": [
+        { "name": "Classic Roast Monthly", "price": 19.99 },
+        { "name": "Explorer's Choice Quarterly", "price": 29.99 },
+        { "name": "Flavored Coffee Sampler", "price": 24.99 }
+      ]
+    }
+  ]
+}

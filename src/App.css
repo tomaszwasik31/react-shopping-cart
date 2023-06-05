@@ -37,9 +37,13 @@ button {
 }
 /* my css */
 :root {
-  --dark: #070707;
+  --dark: #1a1919;
   --light: #e4e4e4;
   --accent: #b6c6ff;
+  --primary: #ff7f50;
+  --secondary: #62c2cc;
+  --tertiary: #f7d358;
+  --complementary: #7f7fff;
 }
 
 body {
@@ -48,7 +52,6 @@ body {
   color: var(--light);
   width: 100vw;
   overflow-x: hidden;
-  
 }
 
 /* global-classes */
@@ -58,7 +61,6 @@ body {
 
 .app-wrapper {
   padding: 2rem;
-  
 }
 
 a {
@@ -109,7 +111,7 @@ ul {
 }
 
 .cart {
-  background-color: var(--accent);
+  background-color: var(--primary);
   width: 4rem;
   border-radius: 100%;
   padding: 0.5rem;
@@ -240,4 +242,19 @@ h1 {
 .btn:hover {
   background-color: var(--accent);
   color: var(--dark);
+}
+
+.active-btn {
+  background-color: var(--accent);
+  color: var(--dark);
+}
+
+/* Shop */
+
+.shop-btn-container {
+  display: flex;
+
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
