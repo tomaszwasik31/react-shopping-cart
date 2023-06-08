@@ -1,22 +1,41 @@
 import { Outlet, NavLink } from "react-router-dom";
 
+const getNavLinkClassName = ({ isActive }) =>
+  isActive ? "btn active-btn" : "btn";
+
 export default function Shop() {
   return (
     <>
       <div className="page-wrapper container-max">
         <div className="shop-btn-container">
-          <button className="btn">Coffee </button>
-          <button className="btn">Tea Selection</button>
-          <button className="btn">Coffee Merchandise</button>
-          <button className="btn">Gift Sets</button>
-          <button className="btn">Coffee Subscriptions</button>
+          <NavLink className={getNavLinkClassName} exact to="/shop/coffee">
+            Coffee
+          </NavLink>
           <NavLink
-            className={({ isActive }) => {
-              return isActive ? "btn active-btn" : "btn";
-            }}
-            to="/shop/machines"
+            className={getNavLinkClassName}
+            exact
+            to="/shop/tea-selection"
           >
+            Tea Selection
+          </NavLink>
+          <NavLink className={getNavLinkClassName} exact to="/shop/merchandise">
+            Coffee Merchandise
+          </NavLink>
+          <NavLink className={getNavLinkClassName} exact to="/shop/gift-sets">
+            Gift Sets
+          </NavLink>
+          <NavLink
+            className={getNavLinkClassName}
+            exact
+            to="/shop/subscriptions"
+          >
+            Coffee Subscriptions
+          </NavLink>
+          <NavLink className={getNavLinkClassName} exact to="/shop/machines">
             Coffee Machines
+          </NavLink>
+          <NavLink className={getNavLinkClassName} exact to="/shop/accessories">
+            Coffee Accessories
           </NavLink>
         </div>
         Shop

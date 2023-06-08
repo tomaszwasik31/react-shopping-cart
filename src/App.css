@@ -104,6 +104,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9999;
 }
 
 .logo {
@@ -157,6 +158,8 @@ h1 {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .h1-star {
@@ -175,6 +178,7 @@ h1 {
 
 .circleLottie {
   position: absolute;
+  pointer-events: none;
 
   left: 80%;
   transform: translate(-50%, -50%);
