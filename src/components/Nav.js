@@ -7,6 +7,7 @@ export default function Nav() {
     <nav className="nav container-max">
       <div className="logo-container ">
         <img className="logo" src={logo} alt="logo" />
+       
       </div>
       <div className="nav-links-container">
         <div>
@@ -17,17 +18,7 @@ export default function Nav() {
               </NavLink>
             </li>
             <li className="nav-link">
-              <NavLink
-                to="/shop"
-                isActive={(match, location) => {
-                  return location.pathname.includes("/shop");
-                  // The isActive function in NavLink checks if the current pathname includes "/shop".
-                  // If true, the NavLink is considered active and applies the corresponding styling.
-                  // This ensures the "Shop" NavLink remains active on both the "/shop" route and its subpages.
-                }}
-              >
-                Shop
-              </NavLink>
+              <NavLink to="/shop">Shop</NavLink>
             </li>
 
             <li className="nav-link">

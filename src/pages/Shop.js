@@ -1,9 +1,12 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, useLocation } from "react-router-dom";
 
 const getNavLinkClassName = ({ isActive }) =>
   isActive ? "btn active-btn" : "btn";
 
 export default function Shop() {
+  const location = useLocation();
+  const isShopRoute = location.pathname === "/shop";
+
   return (
     <>
       <div className="page-wrapper container-max">
@@ -38,8 +41,10 @@ export default function Shop() {
             Coffee Accessories
           </NavLink>
         </div>
-        Shop
       </div>
+      <h1>Our shop</h1>
+      {isShopRoute && <p>Check the whole shop</p>}
+
       <Outlet />
     </>
   );
