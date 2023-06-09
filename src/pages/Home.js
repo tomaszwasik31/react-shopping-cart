@@ -2,9 +2,9 @@ import React from "react";
 import star from "../img/icons/star.svg";
 import { Player } from "@lottiefiles/react-lottie-player";
 import circleLottie from "../img/lottie/circle-lottie.json";
-import coffeeMachine from "../img/coffee-machine.webp";
-import coffeeBag from "../img/coffee-bag.webp";
-import coffeeAccessories from "../img/coffee-accessories.webp";
+import coffeeMachine from "../img/coffeeMachine.webp";
+import coffeeBag from "../img/coffeeBag.webp";
+import coffeeAccessories from "../img/coffeeAccessories.webp";
 import { NavLink } from "react-router-dom";
 
 export default function Home() {

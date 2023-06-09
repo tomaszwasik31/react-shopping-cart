@@ -1,7 +1,18 @@
 import { Outlet, NavLink, useLocation } from "react-router-dom";
+import data from "../data.json";
+
+import Category from "../components/Category";
 
 const getNavLinkClassName = ({ isActive }) =>
   isActive ? "btn active-btn" : "btn";
+
+const shopLandingPage = (
+  <Category
+    data={data.categories.find(
+      (category) => category.name === "Best Selling Products"
+    )}
+  />
+);
 
 export default function Shop() {
   const location = useLocation();
@@ -42,10 +53,10 @@ export default function Shop() {
           </NavLink>
         </div>
       </div>
-      <h1>Our shop</h1>
-      {isShopRoute && <p>Check the whole shop</p>}
-
-      <Outlet />
+      <div className="page-wrapper container-max">
+        {isShopRoute && shopLandingPage}
+        <Outlet />
+      </div>
     </>
   );
 }

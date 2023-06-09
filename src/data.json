@@ -2,58 +2,194 @@
   "categories": [
     {
       "name": "Coffee Machine",
+      "desc": "Explore our high-quality coffee machines that deliver the perfect brew every time. From the BrewMaster 2000 to the BeanToCup Pro, experience the joy of brewing your favorite coffee at home.",
       "items": [
-        { "name": "BrewMaster 2000", "price": 249.99 },
-        { "name": "BeanToCup Pro", "price": 399.99 },
-        { "name": "Espresso Elite", "price": 179.99 }
+        {
+          "id": "1",
+          "name": "BrewMaster 2000",
+          "price": 249.99,
+          "img": "coffeeMachine"
+        },
+        {
+          "id": "2",
+          "name": "BeanToCup Pro",
+          "price": 399.99,
+          "img": "coffeeMachine"
+        },
+        {
+          "id": "3",
+          "name": "Espresso Elite",
+          "price": 179.99,
+          "img": "coffeeMachine"
+        }
       ]
     },
     {
       "name": "Coffee",
+      "desc": "Indulge in the rich flavors of our premium coffee selection. From the smooth and balanced Morning Blend to the bold and robust Dark Roast Delight, discover a range of coffee experiences to suit your taste.",
       "items": [
-        { "name": "Morning Blend", "price": 12.99 },
-        { "name": "Dark Roast Delight", "price": 14.99 },
-        { "name": "Colombian Supreme", "price": 15.99 }
+        {
+          "id": "4",
+          "name": "Morning Blend",
+          "price": 12.99,
+          "img": "coffeeBag"
+        },
+        {
+          "id": "5",
+          "name": "Dark Roast Delight",
+          "price": 14.99,
+          "img": "coffeeBag"
+        },
+        {
+          "id": "6",
+          "name": "Colombian Supreme",
+          "price": 15.99,
+          "img": "coffeeBag"
+        }
       ]
     },
     {
       "name": "Coffee Accessories",
+      "desc": "Elevate your coffee brewing game with our collection of essential coffee accessories. From the Barista Essentials Kit to the Stainless Steel Milk Frother, enhance your coffee-making process with professional tools.",
       "items": [
-        { "name": "Barista Essentials Kit", "price": 49.99 },
-        { "name": "Stainless Steel Milk Frother", "price": 19.99 },
-        { "name": "Ceramic Coffee Dripper", "price": 12.99 }
+        {
+          "id": "7",
+          "name": "Barista Essentials Kit",
+          "price": 49.99,
+          "img": "coffeeAccessories"
+        },
+        {
+          "id": "8",
+          "name": "Stainless Steel Milk Frother",
+          "price": 19.99,
+          "img": "coffeeAccessories"
+        },
+        {
+          "id": "9",
+          "name": "Ceramic Coffee Dripper",
+          "price": 12.99,
+          "img": "coffeeAccessories"
+        }
       ]
     },
     {
       "name": "Tea Selection",
+      "desc": "Dive into the world of exquisite tea with our carefully curated selection. From the classic English Breakfast to the aromatic Green Jasmine Tea, savor the calming and invigorating flavors of our premium teas.",
       "items": [
-        { "name": "English Breakfast", "price": 9.99 },
-        { "name": "Green Jasmine Tea", "price": 11.99 },
-        { "name": "Earl Grey Classic", "price": 10.99 }
+        {
+          "id": "10",
+          "name": "English Breakfast",
+          "price": 9.99,
+          "img": "tea"
+        },
+        {
+          "id": "11",
+          "name": "Green Jasmine Tea",
+          "price": 11.99,
+          "img": "tea"
+        },
+        {
+          "id": "12",
+          "name": "Earl Grey Classic",
+          "price": 10.99,
+          "img": "tea"
+        }
       ]
     },
     {
       "name": "Coffee Merchandise",
+      "desc": "Show your love for coffee with our stylish merchandise. From the Logo Mug to the trendy T-shirt 'Coffee Lover', embrace your coffee passion with our range of coffee-themed products.",
       "items": [
-        { "name": "Logo Mug", "price": 14.99 },
-        { "name": "T-shirt 'Coffee Lover'", "price": 19.99 },
-        { "name": "Enamel Pin Set", "price": 9.99 }
+        {
+          "id": "13",
+          "name": "Logo Mug",
+          "price": 14.99,
+          "img": "merchandise"
+        },
+        {
+          "id": "14",
+          "name": "T-shirt 'Coffee Lover'",
+          "price": 19.99,
+          "img": "merchandise"
+        },
+        {
+          "id": "15",
+          "name": "Enamel Pin Set",
+          "price": 9.99,
+          "img": "merchandise"
+        }
       ]
     },
     {
       "name": "Gift Sets",
+      "desc": "Delight your loved ones with our thoughtfully curated gift sets. From the Deluxe Coffee Sampler to the Specialty Tea Gift Box, give the gift of exceptional taste and brewing experiences.",
       "items": [
-        { "name": "Deluxe Coffee Sampler", "price": 29.99 },
-        { "name": "Coffee and Mug Combo", "price": 24.99 },
-        { "name": "Specialty Tea Gift Box", "price": 27.99 }
+        {
+          "id": "16",
+          "name": "Deluxe Coffee Sampler",
+          "price": 29.99,
+          "img": "gift"
+        },
+        {
+          "id": "17",
+          "name": "Coffee and Mug Combo",
+          "price": 24.99,
+          "img": "gift"
+        },
+        {
+          "id": "18",
+          "name": "Specialty Tea Gift Box",
+          "price": 27.99,
+          "img": "gift"
+        }
       ]
     },
     {
       "name": "Coffee Subscriptions",
+      "desc": "Experience the convenience of our coffee subscription services. Choose from options like Classic Roast Monthly, Explorer's Choice Quarterly, and Flavored Coffee Sampler, and enjoy a regular supply of freshly roasted coffee.",
       "items": [
-        { "name": "Classic Roast Monthly", "price": 19.99 },
-        { "name": "Explorer's Choice Quarterly", "price": 29.99 },
-        { "name": "Flavored Coffee Sampler", "price": 24.99 }
+        {
+          "id": "19",
+          "name": "Classic Roast Monthly",
+          "price": 19.99,
+          "img": "subscription"
+        },
+        {
+          "id": "20",
+          "name": "Explorer's Choice Quarterly",
+          "price": 29.99,
+          "img": "subscription"
+        },
+        {
+          "id": "21",
+          "name": "Flavored Coffee Sampler",
+          "price": 24.99,
+          "img": "subscription"
+        }
+      ]
+    },
+    {
+      "name": "Best Selling Products",
+      "desc": "At brewhive, we're passionate about crafting exceptional coffee experiences. Step into our cozy cafe and immerse yourself in the world of aromatic blends, artisanal brewing techniques, and a warm ambiance that's perfect for catching up with friends or getting work done. From our meticulously sourced beans to our expertly trained baristas, we strive to deliver a coffee journey that will leave you craving for more.",
+      "items": [
+        {
+          "id": "19",
+          "name": "Classic Roast Monthly",
+          "price": 19.99,
+          "img": "subscription"
+        },
+        {
+          "id": "17",
+          "name": "Coffee and Mug Combo",
+          "price": 24.99,
+          "img": "gift"
+        },
+        {
+          "id": "11",
+          "name": "Green Jasmine Tea",
+          "price": 11.99,
+          "img": "tea"
+        }
       ]
     }
   ]

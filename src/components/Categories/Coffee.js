@@ -1,3 +1,12 @@
+import data from "../../data.json";
+import Category from "../Category";
+
 export default function Coffee() {
-  return <div>Coffee</div>;
+  return (
+    <Category
+      data={data.categories.find(
+        (category) => category.name === "Coffee"
+      )}
+    />
+  );
 }

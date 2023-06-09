@@ -1,5 +1,12 @@
+import data from "../../data.json";
+import Category from "../Category";
+
 export default function Machines() {
   return (
-    <div>Machines</div>
-  )
+    <Category
+      data={data.categories.find(
+        (category) => category.name === "Coffee Machine"
+      )}
+    />
+  );
 }

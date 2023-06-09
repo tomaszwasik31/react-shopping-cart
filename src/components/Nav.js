@@ -7,7 +7,6 @@ export default function Nav() {
     <nav className="nav container-max">
       <div className="logo-container ">
         <img className="logo" src={logo} alt="logo" />
-       
       </div>
       <div className="nav-links-container">
         <div>
