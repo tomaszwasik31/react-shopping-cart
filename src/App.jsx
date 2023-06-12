@@ -13,13 +13,23 @@ import Merchandise from "./components/Categories/Merchandise";
 import GiftSets from "./components/Categories/GiftSets";
 import Subscriptions from "./components/Categories/Subscriptions";
 import Accessories from "./components/Categories/Accessories";
+import Basket from "./components/Basket";
 
 function App() {
+
+
+  const [isBasketActive, setIsBasketActive] = React.useState(false)
+
+
+  function toggleBasket (){
+    setIsBasketActive(prevState => !prevState)
+  }
   return (
     <>
       <Stars />
+      <Basket isBasketActive={isBasketActive} toggleBasket={toggleBasket}/>
       <div className="app-wrapper">
-        <Nav />
+        <Nav toggleBasket={toggleBasket}/>
 
         <Routes>
           <Route path="/" element={<Home />} />

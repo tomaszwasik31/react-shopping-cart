@@ -2,7 +2,10 @@ import { NavLink } from "react-router-dom";
 import logo from "../img/logo.svg";
 import cart from "../img/cart.svg";
 
-export default function Nav() {
+export default function Nav(props) {
+
+
+
   return (
     <nav className="nav container-max">
       <div className="logo-container ">
@@ -26,7 +29,7 @@ export default function Nav() {
           </ul>
         </div>
       </div>
-      <div className="cart-container">
+      <div className="cart-container" onClick={props.toggleBasket}>
         <img className="cart" src={cart} alt="cart" />
       </div>
     </nav>

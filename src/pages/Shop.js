@@ -1,6 +1,5 @@
 import { Outlet, NavLink, useLocation } from "react-router-dom";
 import data from "../data.json";
-
 import Category from "../components/Category";
 
 const getNavLinkClassName = ({ isActive }) =>
