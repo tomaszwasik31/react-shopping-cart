@@ -16,20 +16,43 @@ import Accessories from "./components/Categories/Accessories";
 import Basket from "./components/Basket";
 
 function App() {
+  const basketData = [
+    [
+      {
+        id: "1",
+        name: "BrewMaster 2000",
+        price: 249.99,
+        img: "coffeeMachine",
+        quantity: 1,
+      },
+    ],
+    [
+      {
+        id: "6",
+        name: "Colombian Supreme",
+        price: 15.99,
+        img: "coffeeBag",
+        quantity: 2,
+      },
+    ],
+  ];
+  const [inBasket, setInBasket] = React.useState(basketData);
 
+  const [isBasketActive, setIsBasketActive] = React.useState(false);
 
-  const [isBasketActive, setIsBasketActive] = React.useState(false)
-
-
-  function toggleBasket (){
-    setIsBasketActive(prevState => !prevState)
+  function toggleBasket() {
+    setIsBasketActive((prevState) => !prevState);
   }
   return (
     <>
       <Stars />
-      <Basket isBasketActive={isBasketActive} toggleBasket={toggleBasket}/>
+      <Basket
+        isBasketActive={isBasketActive}
+        toggleBasket={toggleBasket}
+        basketData={inBasket}
+      />
       <div className="app-wrapper">
-        <Nav toggleBasket={toggleBasket}/>
+        <Nav toggleBasket={toggleBasket} />
 
         <Routes>
           <Route path="/" element={<Home />} />
