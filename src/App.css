@@ -273,13 +273,18 @@ h1 {
   gap: 2rem;
 }
 
-.shop-top-container {
-  display: flex;
+.shop-category-container {
+
   max-width: 70%;
   padding-top: 4rem;
   gap: 4rem;
   justify-content: center;
   align-items: center;
+}
+
+.category-top-container{
+  display: flex;
+  gap: 4rem;
 }
 .category-name {
   font-weight: 300;
@@ -292,8 +297,11 @@ h1 {
 
 .all-products-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   gap: 4rem;
-  padding-top: 4rem;
+  padding-top: 8rem;
 }
 .product-container {
   display: flex;
@@ -406,7 +414,6 @@ h1 {
   border-radius: 100%;
   display: flex;
   align-items: center;
-
 }
 
 .quantity-icon {
