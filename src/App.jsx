@@ -49,15 +49,36 @@ function App() {
         )
       )
     );
-    validateBasket();
+    checkQuantity();
   }
 
-  function validateBasket() {
+  function checkQuantity() {
     setInBasket((prevInBasket) =>
       prevInBasket.map((category) =>
         category.filter((item) => item.quantity > 0)
       )
     );
+  }
+
+  function addItemToBasket(product) {
+    setInBasket((prevInBasket) => {
+      const existingItem = prevInBasket
+        .flat()
+        .find((item) => item.id === product.id);
+
+      if (existingItem) {
+        return prevInBasket.map((category) =>
+          category.map((item) =>
+            item.id === product.id
+              ? { ...item, quantity: item.quantity + 1 }
+              : item
+          )
+        );
+      } else {
+        const newProduct = { ...product, quantity: 1 };
+        return [...prevInBasket, [newProduct]];
+      }
+    });
   }
 
   const [isBasketActive, setIsBasketActive] = useState(false);
@@ -80,9 +101,13 @@ function App() {
         <Nav toggleBasket={toggleBasket} />
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/shop/" element={<Shop />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" exact={true} element={<Home />} />
+          <Route
+            path="/shop/"
+            exact={true}
+            element={<Shop addItemToBasket={addItemToBasket} />}
+          />
+          <Route path="/contact" exact={true} element={<Contact />} />
         </Routes>
       </div>
     </>

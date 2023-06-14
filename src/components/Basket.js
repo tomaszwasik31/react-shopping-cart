@@ -50,7 +50,7 @@ export default function Basket(props) {
     const calculatedPrice = flattenedBasketData.reduce((total, item) => {
       return total + item.price * item.quantity;
     }, 0);
-    setTotalPrice(calculatedPrice);
+    setTotalPrice(calculatedPrice.toFixed(2));
   }, [flattenedBasketData]);
 
   return (

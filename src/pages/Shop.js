@@ -20,7 +20,7 @@ const categories = [
   "Coffee Accessories",
 ];
 
-export default function Shop() {
+export default function Shop(props) {
   const [currentCategory, setCurrentCategory] = React.useState("Coffee");
 
   function changeCategory(name) {
@@ -35,7 +35,7 @@ export default function Shop() {
     <div className="product-container" key={product.id} id={product.id}>
       <div className="small-product-img-container">
         <img src={getImagePath(product.img)} alt="" className="product-img" />
-        <button className="btn btn-add">Add to basket</button>
+        <button className="btn btn-add" onClick={() =>props.addItemToBasket(product)}>Add to basket</button>
       </div>
       <div className="product-desc">
         <p className="product-name">{product.name}</p>
