@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Nav from "./components/Nav";
 import Contact from "./pages/Contact";
 import Stars from "./components/Stars";
-
 import Basket from "./components/Basket";
 
 function App() {
@@ -30,13 +29,43 @@ function App() {
       },
     ],
   ];
-  const [inBasket, setInBasket] = React.useState(basketData);
+  const [inBasket, setInBasket] = useState(basketData);
 
-  const [isBasketActive, setIsBasketActive] = React.useState(false);
+  function addQuantity(id) {
+    setInBasket((prevInBasket) =>
+      prevInBasket.map((category) =>
+        category.map((item) =>
+          item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+        )
+      )
+    );
+  }
+
+  function subtractQuantity(id) {
+    setInBasket((prevInBasket) =>
+      prevInBasket.map((category) =>
+        category.map((item) =>
+          item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+        )
+      )
+    );
+    validateBasket();
+  }
+
+  function validateBasket() {
+    setInBasket((prevInBasket) =>
+      prevInBasket.map((category) =>
+        category.filter((item) => item.quantity > 0)
+      )
+    );
+  }
+
+  const [isBasketActive, setIsBasketActive] = useState(false);
 
   function toggleBasket() {
     setIsBasketActive((prevState) => !prevState);
   }
+
   return (
     <>
       <Stars />
@@ -44,6 +73,8 @@ function App() {
         isBasketActive={isBasketActive}
         toggleBasket={toggleBasket}
         basketData={inBasket}
+        addQuantity={addQuantity}
+        subtractQuantity={subtractQuantity}
       />
       <div className="app-wrapper">
         <Nav toggleBasket={toggleBasket} />

@@ -28,10 +28,16 @@ export default function Basket(props) {
       <p className="basket-item-quantity">{item.quantity}x</p>
       <p className="basket-item-price">${item.price}</p>
       <div className="quantity-change-container">
-        <button className="btn-quantity">
+        <button
+          className="btn-quantity"
+          onClick={() => props.addQuantity(item.id)}
+        >
           <img className="quantity-icon" src={plus} alt="" />
         </button>
-        <button className="btn-quantity">
+        <button
+          className="btn-quantity"
+          onClick={() => props.subtractQuantity(item.id)}
+        >
           <img className="quantity-icon" src={minus} alt="" />
         </button>
       </div>
