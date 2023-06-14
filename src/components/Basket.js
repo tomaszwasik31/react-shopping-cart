@@ -67,7 +67,12 @@ export default function Basket(props) {
           <div className="basket-items-container">{basketItems}</div>
 
           <div className="basket-total-container">
-            <p className="basket-total-txt"> Total price: ${totalPrice}</p>
+            <p className="basket-total-txt">
+              {" "}
+              Total price: ${totalPrice}
+              <br />
+              For {props.totalQuantity} items
+            </p>
             <button className="btn pay-btn"> Pay Now!</button>
           </div>
         </>

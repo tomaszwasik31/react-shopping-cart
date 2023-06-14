@@ -5,9 +5,9 @@ import circleLottie from "../img/lottie/circle-lottie.json";
 import coffeeMachine from "../img/coffeeMachine.webp";
 import coffeeBag from "../img/coffeeBag.webp";
 import coffeeAccessories from "../img/coffeeAccessories.webp";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div className="page-wrapper container-max">
       <div className="h1-container">
@@ -29,41 +29,72 @@ export default function Home() {
       <p className="small-txt">Today I am looking for</p>
       <div className="big_category-container">
         <div className="category-container">
-          <NavLink className="img-category-container" exact to="/shop/machines">
+          <Link
+            className="img-category-container"
+            exact
+            to="/shop/"
+            onClick={() => props.changeCategory("Coffee Machine")}
+          >
             <img src={coffeeMachine} alt="" className="img-category" />
-          </NavLink>
+          </Link>
           <h3 className="txt-category">Coffee Machine</h3>
         </div>
         <div className="category-container">
-          <NavLink className="img-category-container" exact to="/shop/coffee">
+          <Link
+            className="img-category-container"
+            exact
+            to="/shop/"
+            onClick={() => props.changeCategory("Coffee")}
+          >
             <img src={coffeeBag} alt="" className="img-category" />
-          </NavLink>
+          </Link>
           <h3 className="txt-category">Coffee</h3>
         </div>
         <div className="category-container">
-          <NavLink
+          <Link
             className="img-category-container"
             exact
-            to="/shop/accessories"
+            to="/shop/"
+            onClick={() => props.changeCategory("Coffee Accessories")}
           >
             <img src={coffeeAccessories} alt="" className="img-category" />
-          </NavLink>
+          </Link>
           <h3 className="txt-category">Coffee Accessories</h3>
         </div>
       </div>
       <div className="small-category-container">
-        <NavLink className="btn" exact to="/shop/tea-selection">
+        <Link
+          className="btn"
+          exact
+          to="/shop/"
+          onClick={() => props.changeCategory("Tea Selection")}
+        >
           Tea Selection
-        </NavLink>
-        <NavLink className="btn" exact to="/shop/merchandise">
+        </Link>
+        <Link
+          className="btn"
+          exact
+          to="/shop/"
+          onClick={() => props.changeCategory("Coffee Merchandise")}
+        >
           Coffee Merchandise
-        </NavLink>
-        <NavLink className="btn" exact to="/shop/gift-sets">
+        </Link>
+        <Link
+          className="btn"
+          exact
+          to="/shop/"
+          onClick={() => props.changeCategory("Gift Sets")}
+        >
           Gift Sets
-        </NavLink>
-        <NavLink className="btn" exact to="/shop/subscriptions">
+        </Link>
+        <Link
+          className="btn"
+          exact
+          to="/shop/"
+          onClick={() => props.changeCategory("Coffee Subscriptions")}
+        >
           Coffee Subscriptions
-        </NavLink>
+        </Link>
       </div>
     </div>
   );

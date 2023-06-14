@@ -59,8 +59,14 @@ body {
   max-width: 140rem;
 }
 
-.app-wrapper {
+.main-wrapper {
   padding: 2rem;
+  width: 100%;
+}
+
+.app-wrapper{
+  display: flex;
+ 
 }
 p {
   font-weight: 300;
@@ -115,7 +121,10 @@ ul {
 .logo {
   width: 3rem;
 }
-
+.cart-container{
+  display: flex;
+  position: relative;
+}
 .cart {
   background-color: var(--primary);
   width: 4rem;
@@ -126,6 +135,19 @@ ul {
 
 .cart:hover {
   cursor: pointer;
+
+  background-color: var(--dark);
+
+}
+
+.numbers-in_basket{
+  position: absolute;
+  bottom: -.5rem;
+  right: -.5rem;
+  padding:  7% 15%;
+  border: solid 1px var(--light);
+  border-radius: 100%;
+  
   background-color: var(--dark);
 }
 
@@ -364,11 +386,14 @@ h1 {
   align-self: flex-end;
 }
 .basket-container {
-  background-color: var(--dark);
+  background-color: var(--primary);
+  color: var(--dark);
   border-left: solid 1px var(--light);
-  position: absolute;
+ 
 
   display: flex;
+
+
   flex-direction: column;
   align-items: center;
   padding: 2rem;
@@ -393,6 +418,7 @@ h1 {
 
 .basket-item-img-container {
   border: 1px solid var(--light);
+  background-color: var(--dark);
   padding: 1.5rem;
   border-radius: 100%;
 }
@@ -421,8 +447,17 @@ h1 {
   height: 1rem;
 }
 
-.pay-btn {
-  background-color: var(--primary);
-  border: none;
+.basket-total-container{
+  padding-top: 4rem;
+  display: flex;
+  gap: 4rem;
+}
+.basket-container p{
+  font-weight: 400;
   color: var(--dark);
+}
+.pay-btn {
+  background-color: var(--dark);
+  border: none;
+ 
 }

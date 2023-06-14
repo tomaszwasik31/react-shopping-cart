@@ -29,6 +29,13 @@ function App() {
       },
     ],
   ];
+
+  const [currentCategory, setCurrentCategory] = useState("Coffee");
+
+  function changeCategory(name) {
+    setCurrentCategory(name);
+  }
+
   const [inBasket, setInBasket] = useState(basketData);
 
   function addQuantity(id) {
@@ -49,10 +56,10 @@ function App() {
         )
       )
     );
-    checkQuantity();
+    checkIfNot0();
   }
 
-  function checkQuantity() {
+  function checkIfNot0() {
     setInBasket((prevInBasket) =>
       prevInBasket.map((category) =>
         category.filter((item) => item.quantity > 0)
@@ -87,30 +94,61 @@ function App() {
     setIsBasketActive((prevState) => !prevState);
   }
 
+  function countTotal() {
+    setTotalQuantity(
+      inBasket.reduce((total, category) => {
+        return (
+          total +
+          category.reduce((categoryTotal, item) => {
+            return categoryTotal + item.quantity;
+          }, 0)
+        );
+      }, 0)
+    );
+  }
+
+  const [totalQuantity, setTotalQuantity] = useState(0);
+
+  useEffect(() => {
+    countTotal();
+  }, [inBasket]);
+
   return (
-    <>
+    <div className="app-wrapper ">
       <Stars />
+
+      <div className="main-wrapper">
+        <Nav toggleBasket={toggleBasket} totalQuantity={totalQuantity} />
+
+        <Routes>
+          <Route
+            path="/"
+            exact={true}
+            element={<Home changeCategory={changeCategory} />}
+          />
+          <Route
+            path="/shop/"
+            exact={true}
+            element={
+              <Shop
+                addItemToBasket={addItemToBasket}
+                currentCategory={currentCategory}
+                changeCategory={changeCategory}
+              />
+            }
+          />
+          <Route path="/contact" exact={true} element={<Contact />} />
+        </Routes>
+      </div>
       <Basket
         isBasketActive={isBasketActive}
         toggleBasket={toggleBasket}
         basketData={inBasket}
         addQuantity={addQuantity}
         subtractQuantity={subtractQuantity}
+        totalQuantity={totalQuantity}
       />
-      <div className="app-wrapper">
-        <Nav toggleBasket={toggleBasket} />
-
-        <Routes>
-          <Route path="/" exact={true} element={<Home />} />
-          <Route
-            path="/shop/"
-            exact={true}
-            element={<Shop addItemToBasket={addItemToBasket} />}
-          />
-          <Route path="/contact" exact={true} element={<Contact />} />
-        </Routes>
-      </div>
-    </>
+    </div>
   );
 }
 

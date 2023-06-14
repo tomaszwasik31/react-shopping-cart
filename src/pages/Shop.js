@@ -21,14 +21,14 @@ const categories = [
 ];
 
 export default function Shop(props) {
-  const [currentCategory, setCurrentCategory] = React.useState("Coffee");
+  // const [currentCategory, setCurrentCategory] = React.useState("Coffee");
 
-  function changeCategory(name) {
-    setCurrentCategory(name);
-  }
+  // function changeCategory(name) {
+  //   setCurrentCategory(name);
+  // }
 
   const currentDataCategory = data.categories.find(
-    (category) => category.name === currentCategory
+    (category) => category.name === props.currentCategory
   );
 
   const products = currentDataCategory.items.map((product) => (
@@ -64,9 +64,9 @@ export default function Shop(props) {
             <button
               key={category}
               className={`btn ${
-                currentCategory === category ? "active-btn" : ""
+                props.currentCategory === category ? "active-btn" : ""
               }`}
-              onClick={() => changeCategory(category)}
+              onClick={() => props.changeCategory(category)}
             >
               {category}
             </button>
