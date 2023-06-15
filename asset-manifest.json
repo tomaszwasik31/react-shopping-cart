@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/tomaszwasik31/react-shopping-cart/static/css/main.b9e33424.css",
-    "main.js": "/tomaszwasik31/react-shopping-cart/static/js/main.d4509b60.js",
-    "static/media/subscription.webp": "/tomaszwasik31/react-shopping-cart/static/media/subscription.d115c71c9ca8247a2f32.webp",
-    "static/media/coffeeMachine.webp": "/tomaszwasik31/react-shopping-cart/static/media/coffeeMachine.a88667e8b2664296873f.webp",
-    "static/media/coffeeAccessories.webp": "/tomaszwasik31/react-shopping-cart/static/media/coffeeAccessories.133dae41c08182c9866c.webp",
-    "static/media/tea.webp": "/tomaszwasik31/react-shopping-cart/static/media/tea.67bad35f84dc38d5d33b.webp",
-    "static/media/coffeeBag.webp": "/tomaszwasik31/react-shopping-cart/static/media/coffeeBag.fb00438c01e1735eb671.webp",
-    "static/media/gift.webp": "/tomaszwasik31/react-shopping-cart/static/media/gift.ef4b04a20f698bab6049.webp",
-    "static/media/merchandise.webp": "/tomaszwasik31/react-shopping-cart/static/media/merchandise.146cf01907657b93c228.webp",
-    "static/media/logo.svg": "/tomaszwasik31/react-shopping-cart/static/media/logo.4ce3f4dc1598aea1ac7cf9995e31be93.svg",
-    "static/media/close.svg": "/tomaszwasik31/react-shopping-cart/static/media/close.4d9a5aebb9b6581acf05caca9821fe8d.svg",
-    "static/media/cart.svg": "/tomaszwasik31/react-shopping-cart/static/media/cart.c730821562a2b458d4c7b79e33f37c50.svg",
-    "index.html": "/tomaszwasik31/react-shopping-cart/index.html",
-    "static/media/minus.svg": "/tomaszwasik31/react-shopping-cart/static/media/minus.9ee53cc09e3aeb3a4c4f8567a3eb9ffe.svg",
-    "static/media/star.svg": "/tomaszwasik31/react-shopping-cart/static/media/star.0731bd7a2ab83d152ee109965f8f8a6f.svg",
-    "static/media/star-7.svg": "/tomaszwasik31/react-shopping-cart/static/media/star-7.f22862a5ea062e1e239dabf874a960b5.svg",
-    "static/media/plus.svg": "/tomaszwasik31/react-shopping-cart/static/media/plus.797831846d70a2cea846b47bb5cf93e1.svg",
-    "main.b9e33424.css.map": "/tomaszwasik31/react-shopping-cart/static/css/main.b9e33424.css.map",
-    "main.d4509b60.js.map": "/tomaszwasik31/react-shopping-cart/static/js/main.d4509b60.js.map"
+    "main.css": "/react-shopping-cart/static/css/main.b9e33424.css",
+    "main.js": "/react-shopping-cart/static/js/main.dfa6ffe6.js",
+    "static/media/subscription.webp": "/react-shopping-cart/static/media/subscription.d115c71c9ca8247a2f32.webp",
+    "static/media/coffeeMachine.webp": "/react-shopping-cart/static/media/coffeeMachine.a88667e8b2664296873f.webp",
+    "static/media/coffeeAccessories.webp": "/react-shopping-cart/static/media/coffeeAccessories.133dae41c08182c9866c.webp",
+    "static/media/tea.webp": "/react-shopping-cart/static/media/tea.67bad35f84dc38d5d33b.webp",
+    "static/media/coffeeBag.webp": "/react-shopping-cart/static/media/coffeeBag.fb00438c01e1735eb671.webp",
+    "static/media/gift.webp": "/react-shopping-cart/static/media/gift.ef4b04a20f698bab6049.webp",
+    "static/media/merchandise.webp": "/react-shopping-cart/static/media/merchandise.146cf01907657b93c228.webp",
+    "static/media/logo.svg": "/react-shopping-cart/static/media/logo.4ce3f4dc1598aea1ac7cf9995e31be93.svg",
+    "static/media/close.svg": "/react-shopping-cart/static/media/close.4d9a5aebb9b6581acf05caca9821fe8d.svg",
+    "static/media/cart.svg": "/react-shopping-cart/static/media/cart.c730821562a2b458d4c7b79e33f37c50.svg",
+    "index.html": "/react-shopping-cart/index.html",
+    "static/media/minus.svg": "/react-shopping-cart/static/media/minus.9ee53cc09e3aeb3a4c4f8567a3eb9ffe.svg",
+    "static/media/star.svg": "/react-shopping-cart/static/media/star.0731bd7a2ab83d152ee109965f8f8a6f.svg",
+    "static/media/star-7.svg": "/react-shopping-cart/static/media/star-7.f22862a5ea062e1e239dabf874a960b5.svg",
+    "static/media/plus.svg": "/react-shopping-cart/static/media/plus.797831846d70a2cea846b47bb5cf93e1.svg",
+    "main.b9e33424.css.map": "/react-shopping-cart/static/css/main.b9e33424.css.map",
+    "main.dfa6ffe6.js.map": "/react-shopping-cart/static/js/main.dfa6ffe6.js.map"
   },
   "entrypoints": [
     "static/css/main.b9e33424.css",
-    "static/js/main.d4509b60.js"
+    "static/js/main.dfa6ffe6.js"
   ]
 }
