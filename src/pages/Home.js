@@ -20,7 +20,7 @@ export default function Home(props) {
           autoplay
           loop
           src={circleLottie}
-          style={{ height: "300px", width: "300px" }}
+          style={{ height: "auto", width: "50%", opacity:  "30%" }}
         ></Player>
         <img className="h1-star" src={star} alt="" />
       </div>

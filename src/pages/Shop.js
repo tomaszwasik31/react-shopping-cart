@@ -10,6 +10,9 @@ import merchandise from "../img/merchandise.webp";
 import subscription from "../img/subscription.webp";
 import tea from "../img/tea.webp";
 
+import { Player } from "@lottiefiles/react-lottie-player";
+import circleLottie from "../img/lottie/circle-lottie.json";
+
 const categories = [
   "Coffee",
   "Tea Selection",
@@ -21,12 +24,6 @@ const categories = [
 ];
 
 export default function Shop(props) {
-  // const [currentCategory, setCurrentCategory] = React.useState("Coffee");
-
-  // function changeCategory(name) {
-  //   setCurrentCategory(name);
-  // }
-
   const currentDataCategory = data.categories.find(
     (category) => category.name === props.currentCategory
   );
@@ -35,7 +32,12 @@ export default function Shop(props) {
     <div className="product-container" key={product.id} id={product.id}>
       <div className="small-product-img-container">
         <img src={getImagePath(product.img)} alt="" className="product-img" />
-        <button className="btn btn-add" onClick={() =>props.addItemToBasket(product)}>Add to basket</button>
+        <button
+          className="btn btn-add"
+          onClick={() => props.addItemToBasket(product)}
+        >
+          Add to basket
+        </button>
       </div>
       <div className="product-desc">
         <p className="product-name">{product.name}</p>
@@ -47,7 +49,17 @@ export default function Shop(props) {
   const currentCategoryItems = (
     <>
       <div className="category-top-container">
-        <h2 className="category-name">{currentDataCategory.name}</h2>
+        <h2 className="category-name">
+          {currentDataCategory.name}{" "}
+          <Player
+            className="circleLottie circle-category"
+            autoplay
+            loop
+            src={circleLottie}
+            style={{ height: "auto", width: "100%", opacity:  "30%" }}
+          ></Player>
+        </h2>
+
         <div className="shop-category-desc">
           <p>{currentDataCategory.desc}</p>
         </div>

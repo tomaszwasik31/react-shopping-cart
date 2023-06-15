@@ -64,9 +64,8 @@ body {
   width: 100%;
 }
 
-.app-wrapper{
+.app-wrapper {
   display: flex;
- 
 }
 p {
   font-weight: 300;
@@ -121,7 +120,7 @@ ul {
 .logo {
   width: 3rem;
 }
-.cart-container{
+.cart-container {
   display: flex;
   position: relative;
 }
@@ -137,17 +136,16 @@ ul {
   cursor: pointer;
 
   background-color: var(--dark);
-
 }
 
-.numbers-in_basket{
+.numbers-in_basket {
   position: absolute;
-  bottom: -.5rem;
-  right: -.5rem;
-  padding:  7% 15%;
+  bottom: -0.5rem;
+  right: -0.5rem;
+  padding: 7% 15%;
   border: solid 1px var(--light);
   border-radius: 100%;
-  
+
   background-color: var(--dark);
 }
 
@@ -211,6 +209,15 @@ h1 {
   left: 80%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+.circle-category {
+  left: 50%;
+  top: 50%;
+}
+
+.category-name {
+  position: relative;
 }
 
 .shop-position {
@@ -296,7 +303,6 @@ h1 {
 }
 
 .shop-category-container {
-
   max-width: 70%;
   padding-top: 4rem;
   gap: 4rem;
@@ -304,7 +310,7 @@ h1 {
   align-items: center;
 }
 
-.category-top-container{
+.category-top-container {
   display: flex;
   gap: 4rem;
 }
@@ -322,7 +328,7 @@ h1 {
   align-items: center;
   justify-content: center;
 
-  gap: 4rem;
+  gap: 3rem;
   padding-top: 8rem;
 }
 .product-container {
@@ -367,8 +373,8 @@ h1 {
 }
 
 .product-img {
-  width: 8rem;
-  height: 8rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 .product-desc {
@@ -389,25 +395,23 @@ h1 {
   background-color: var(--primary);
   color: var(--dark);
   border-left: solid 1px var(--light);
- 
-
   display: flex;
-
-
   flex-direction: column;
   align-items: center;
   padding: 2rem;
   width: 30rem;
-  height: 100vh;
-  right: 0;
-  gap: 2rem;
+  height: 100%;
+  min-height: 100vh;
+  margin-right: 0%;
+  gap: 1rem;
   z-index: 9999;
+  transition: all ease 0.5s;
 }
 
 .basket-items-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .basket-item-container {
@@ -447,17 +451,16 @@ h1 {
   height: 1rem;
 }
 
-.basket-total-container{
+.basket-total-container {
   padding-top: 4rem;
   display: flex;
   gap: 4rem;
 }
-.basket-container p{
+.basket-container p {
   font-weight: 400;
   color: var(--dark);
 }
 .pay-btn {
   background-color: var(--dark);
   border: none;
- 
 }

@@ -15,9 +15,16 @@ import minus from "../img/icons/minus.svg";
 export default function Basket(props) {
   const flattenedBasketData = props.basketData.flat();
 
+  const hideBasketImg = flattenedBasketData.length > 4 ? false : true;
+
+ 
+
   const basketItems = flattenedBasketData.map((item) => (
     <div className="basket-item-container" key={item.id}>
-      <div className="basket-item-img-container">
+      <div
+        className="basket-item-img-container"
+        style={{ display: hideBasketImg ? "flex" : "none" }}
+      >
         <img
           src={getImagePath(item.img)}
           alt={item.img}
@@ -56,7 +63,8 @@ export default function Basket(props) {
   return (
     <div
       className="basket-container"
-      style={{ display: props.isBasketActive ? "flex" : "none" }}
+      style={{ display: props.isBasketActive ? "flex" : "none" } &&{marginRight: props.isBasketActive ?  "0" : "-30rem"}} 
+      
     >
       <button className="close-btn" onClick={props.toggleBasket}>
         <img src={iconClose} alt="close basket icon" />
@@ -68,7 +76,6 @@ export default function Basket(props) {
 
           <div className="basket-total-container">
             <p className="basket-total-txt">
-              {" "}
               Total price: ${totalPrice}
               <br />
               For {props.totalQuantity} items
