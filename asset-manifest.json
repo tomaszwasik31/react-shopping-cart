@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tomaszwasik31/react-shopping-cart/static/css/main.b9e33424.css",
-    "main.js": "/tomaszwasik31/react-shopping-cart/static/js/main.a21ed15e.js",
+    "main.js": "/tomaszwasik31/react-shopping-cart/static/js/main.d4509b60.js",
     "static/media/subscription.webp": "/tomaszwasik31/react-shopping-cart/static/media/subscription.d115c71c9ca8247a2f32.webp",
     "static/media/coffeeMachine.webp": "/tomaszwasik31/react-shopping-cart/static/media/coffeeMachine.a88667e8b2664296873f.webp",
     "static/media/coffeeAccessories.webp": "/tomaszwasik31/react-shopping-cart/static/media/coffeeAccessories.133dae41c08182c9866c.webp",
@@ -18,10 +18,10 @@
     "static/media/star-7.svg": "/tomaszwasik31/react-shopping-cart/static/media/star-7.f22862a5ea062e1e239dabf874a960b5.svg",
     "static/media/plus.svg": "/tomaszwasik31/react-shopping-cart/static/media/plus.797831846d70a2cea846b47bb5cf93e1.svg",
     "main.b9e33424.css.map": "/tomaszwasik31/react-shopping-cart/static/css/main.b9e33424.css.map",
-    "main.a21ed15e.js.map": "/tomaszwasik31/react-shopping-cart/static/js/main.a21ed15e.js.map"
+    "main.d4509b60.js.map": "/tomaszwasik31/react-shopping-cart/static/js/main.d4509b60.js.map"
   },
   "entrypoints": [
     "static/css/main.b9e33424.css",
-    "static/js/main.a21ed15e.js"
+    "static/js/main.d4509b60.js"
   ]
 }
