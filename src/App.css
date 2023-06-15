@@ -80,6 +80,7 @@ a {
 }
 a:hover {
   color: var(--accent);
+  cursor: pointer;
 }
 .active {
   color: var(--accent);
@@ -463,4 +464,13 @@ h1 {
 .pay-btn {
   background-color: var(--dark);
   border: none;
+}
+
+
+/* contact */
+
+.center{
+  padding-top: 16rem;
+  justify-content: center;
+ 
 }
