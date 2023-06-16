@@ -17,8 +17,6 @@ export default function Basket(props) {
 
   const hideBasketImg = flattenedBasketData.length > 4 ? false : true;
 
- 
-
   const basketItems = flattenedBasketData.map((item) => (
     <div className="basket-item-container" key={item.id}>
       <div
@@ -63,13 +61,18 @@ export default function Basket(props) {
   return (
     <div
       className="basket-container"
-      style={{ display: props.isBasketActive ? "flex" : "none" } &&{marginRight: props.isBasketActive ?  "0" : "-30rem"}} 
-      
+      style={
+        { display: props.isBasketActive ? "flex" : "none" } && {
+          marginRight: props.isBasketActive ? "0" : "-30rem",
+        }
+      }
     >
-      <button className="close-btn" onClick={props.toggleBasket}>
-        <img src={iconClose} alt="close basket icon" />
-      </button>
-      <h2>Your Basket</h2>
+      <div className="basket-top-container">
+        <h2>Your Basket</h2>
+        <button className="close-btn" onClick={props.toggleBasket}>
+          <img src={iconClose} alt="close basket icon" />
+        </button>
+      </div>
       {basketItems.length > 0 ? (
         <>
           <div className="basket-items-container">{basketItems}</div>

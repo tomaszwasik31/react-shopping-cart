@@ -86,6 +86,7 @@ function App() {
         return [...prevInBasket, [newProduct]];
       }
     });
+    setIsBasketActive(true)
   }
 
   const [isBasketActive, setIsBasketActive] = useState(false);
